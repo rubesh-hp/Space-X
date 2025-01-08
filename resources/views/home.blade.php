@@ -9,8 +9,8 @@
     <meta name="keywords" content="">
 
     <!-- Favicons -->
-    <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('assets/images/favicon.png') }}" rel="icon">
+    <link href="{{ asset('assets/images/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -69,19 +69,20 @@
                             </div>
 
                             <h1 class="mb-4">
-                                Maecenas Vitae <br>
-                                Consectetur Led <br>
-                                <span class="accent-text">Vestibulum Ante</span>
+                                Space-X <br>
+
+                                <span class="accent-text">Rockets</span>
                             </h1>
 
                             <p class="mb-4 mb-md-5">
-                                Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
-                                Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+
+                            <h3>Reusable Rockets</h3>
+                            <p>Designed for multiple missions, lowering costs and enhancing reliability.</p>
                             </p>
 
                             <div class="hero-buttons">
-                                <a href="{{ url('/about') }}" class="btn btn-primary me-0 me-sm-2 mx-1">Get Started</a>
-                                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-link mt-2 mt-sm-0 glightbox">
+                                <a href="{{ url('/about') }}" class="btn btn-primary me-0 me-sm-2 mx-1">Know More</a>
+                                <a href="https://www.youtube.com/watch?v=ct01niIbbRQ" class="btn btn-link mt-2 mt-sm-0 glightbox">
                                     <i class="bi bi-play-circle me-1"></i>
                                     Play Video
                                 </a>
@@ -91,17 +92,17 @@
 
                     <div class="col-lg-6">
                         <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
-                            <img src="{{ asset('assets/img/illustration-1.webp') }}" alt="Hero Image" class="img-fluid">
+                            <img src="{{ asset('assets/images/features-illustration-1.webp') }}" alt="Hero Image" class="img-fluid">
                             <div class="customers-badge">
                                 <div class="customer-avatars">
-                                    <img src="{{ asset('assets/img/avatar-1.webp') }}" alt="Customer 1" class="avatar">
-                                    <img src="{{ asset('assets/img/avatar-2.webp') }}" alt="Customer 2" class="avatar">
-                                    <img src="{{ asset('assets/img/avatar-3.webp') }}" alt="Customer 3" class="avatar">
-                                    <img src="{{ asset('assets/img/avatar-4.webp') }}" alt="Customer 4" class="avatar">
-                                    <img src="{{ asset('assets/img/avatar-5.webp') }}" alt="Customer 5" class="avatar">
+                                    <img src="{{ asset('assets/images/avatar-1.webp') }}" alt="Customer 1" class="avatar">
+                                    <img src="{{ asset('assets/images/avatar-2.webp') }}" alt="Customer 2" class="avatar">
+                                    <img src="{{ asset('assets/images/avatar-3.webp') }}" alt="Customer 3" class="avatar">
+                                    <img src="{{ asset('assets/images/avatar-4.webp') }}" alt="Customer 4" class="avatar">
+                                    <img src="{{ asset('assets/images/avatar-5.webp') }}" alt="Customer 5" class="avatar">
                                     <span class="avatar more">12+</span>
                                 </div>
-                                <p class="mb-0 mt-2">12,000+ lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                <p class="mb-0 mt-2">Projects in Space-X</p>
                             </div>
                         </div>
                     </div>
@@ -114,30 +115,30 @@
                                 <i class="bi bi-trophy"></i>
                             </div>
                             <div class="stat-content">
-                                <h4>3x Won Awards</h4>
-                                <p class="mb-0">Vestibulum ante ipsum</p>
+                                <h4>3x Won Awards in Space</h4>
+                                <p class="mb-0">Nominated for best Self sustaining space research organization</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="stat-item">
                             <div class="stat-icon">
-                                <i class="bi bi-briefcase"></i>
+                                <i class="bi bi-globe"></i>
                             </div>
                             <div class="stat-content">
-                                <h4>6.5k Faucibus</h4>
-                                <p class="mb-0">Nullam quis ante</p>
+                                <h4>Global Connectivity</h4>
+                                <p class="mb-0">Providing worldwide internet coverage through Starlink satellites.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="stat-item">
                             <div class="stat-icon">
-                                <i class="bi bi-graph-up"></i>
+                                <i class="bi bi-stars"></i>
                             </div>
                             <div class="stat-content">
-                                <h4>80k Mauris</h4>
-                                <p class="mb-0">Etiam sit amet orci</p>
+                                <h4>Interplanetary Exploration</h4>
+                                <p class="mb-0">Enabling humanity to become a multi-planetary species</p>
                             </div>
                         </div>
                     </div>
@@ -147,8 +148,8 @@
                                 <i class="bi bi-award"></i>
                             </div>
                             <div class="stat-content">
-                                <h4>6x Phasellus</h4>
-                                <p class="mb-0">Vestibulum ante ipsum</p>
+                                <h4>Space Researches</h4>
+                                <p class="mb-0">One of the top company to do wide space exploration</p>
                             </div>
                         </div>
                     </div>

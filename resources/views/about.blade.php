@@ -64,17 +64,16 @@
                                 Working for your success
                             </div>
                             <h1 class="mb-4">
-                                Maecenas Vitae <br>
-                                Consectetur Led <br>
-                                <span class="accent-text">Vestibulum Ante</span>
+                                About<br>
+
+                                <span class="accent-text">Us</span>
                             </h1>
                             <p class="mb-4 mb-md-5">
-                                Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
-                                Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+                                Exploring the Frontiers of Space Innovation and make the humanity to reach the most advanced civilization
                             </p>
                             <div class="hero-buttons">
-                                <a href="{{ url('/') }}" class="btn btn-primary me-0 me-sm-2 mx-1">Get Started</a>
-                                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-link mt-2 mt-sm-0 glightbox">
+                                <a href="{{ url('/gallery') }}" class="btn btn-primary me-0 me-sm-2 mx-1">Explore</a>
+                                <a href="https://www.youtube.com/watch?v=3vRC5TMbkaU" class="btn btn-link mt-2 mt-sm-0 glightbox">
                                     <i class="bi bi-play-circle me-1"></i>
                                     Play Video
                                 </a>
@@ -83,17 +82,17 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
-                            <img src="{{ asset('assets/img/illustration-1.webp') }}" alt="Hero Image" class="img-fluid">
+                            <img src="{{ asset('assets/images/illustration-1.webp') }}" alt="Hero Image" class="img-fluid">
                             <div class="customers-badge">
                                 <div class="customer-avatars">
-                                    <img src="{{ asset('assets/img/avatar-1.webp') }}" alt="Customer 1" class="avatar">
-                                    <img src="{{ asset('assets/img/avatar-2.webp') }}" alt="Customer 2" class="avatar">
-                                    <img src="{{ asset('assets/img/avatar-3.webp') }}" alt="Customer 3" class="avatar">
-                                    <img src="{{ asset('assets/img/avatar-4.webp') }}" alt="Customer 4" class="avatar">
-                                    <img src="{{ asset('assets/img/avatar-5.webp') }}" alt="Customer 5" class="avatar">
+                                    <img src="{{ asset('assets/images/avatar-1.webp') }}" alt="Customer 1" class="avatar">
+                                    <img src="{{ asset('assets/images/avatar-2.webp') }}" alt="Customer 2" class="avatar">
+                                    <img src="{{ asset('assets/images/avatar-3.webp') }}" alt="Customer 3" class="avatar">
+                                    <img src="{{ asset('assets/images/avatar-4.webp') }}" alt="Customer 4" class="avatar">
+                                    <img src="{{ asset('assets/images/avatar-5.webp') }}" alt="Customer 5" class="avatar">
                                     <span class="avatar more">12+</span>
                                 </div>
-                                <p class="mb-0 mt-2">12,000+ lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                <p class="mb-0 mt-2">Projects in Space X</p>
                             </div>
                         </div>
                     </div>
@@ -105,6 +104,19 @@
         <section id="vehicles" class="vehicles section">
             <div class="container" data-aos="fade-up">
                 <div class="section-header">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                        <h3>Who We Are</h3>
+                        <p>
+                            SpaceX Falcon Launch Vehicle is dedicated to pushing the boundaries of space exploration.
+                            With cutting-edge technology and a passion for innovation, we aim to make interplanetary travel a reality.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> Revolutionary rocket technology</li>
+                            <li><i class="bi bi-check-circle"></i> Focus on sustainability and reusability</li>
+                            <li><i class="bi bi-check-circle"></i> Visionary projects for Mars colonization</li>
+                        </ul>
+                    </div>
+                    <br>
                     <h2>SpaceX Vehicles</h2>
                     <p>Discover the groundbreaking vehicles developed by SpaceX to advance space exploration.</p>
                 </div>
@@ -112,35 +124,35 @@
                     <!-- Falcon 1 -->
                     <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                         <div class="vehicle-card">
-                            <img src="{{ asset('assets/img/vehicles/falcon1.jpg') }}" alt="Falcon 1" class="img-fluid">
+                            <img src="{{ asset('assets/images/falcon1.jpeg') }}" alt="Falcon 1" class="img-fluid">
                             <h3>Falcon 1</h3>
                             <p>The first privately developed rocket to achieve orbit.</p>
                         </div>
-                    </div>
+                    </div> <br>
                     <!-- Falcon 9 -->
                     <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                         <div class="vehicle-card">
-                            <img src="{{ asset('assets/img/vehicles/falcon9.jpg') }}" alt="Falcon 9" class="img-fluid">
+                            <img src="{{ asset('assets/images/falcon9.jpeg') }}" alt="Falcon 9" class="img-fluid">
                             <h3>Falcon 9</h3>
                             <p>A reusable rocket for transporting satellites and cargo to space.</p>
                         </div>
-                    </div>
+                    </div><br>
                     <!-- Starship -->
                     <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
                         <div class="vehicle-card">
-                            <img src="{{ asset('assets/img/vehicles/starship.jpg') }}" alt="Starship" class="img-fluid">
+                            <img src="{{ asset('assets/images/starship.jpeg') }}" alt="Starship" class="img-fluid">
                             <h3>Starship</h3>
                             <p>The spacecraft for interplanetary travel, including missions to Mars.</p>
                         </div>
-                    </div>
+                    </div><br>
                     <!-- Falcon Heavy -->
                     <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
                         <div class="vehicle-card">
-                            <img src="{{ asset('assets/img/vehicles/falconheavy.jpg') }}" alt="Falcon Heavy" class="img-fluid">
+                            <img src="{{ asset('assets/images/falconheavy.jpeg') }}" alt="Falcon Heavy" class="img-fluid">
                             <h3>Falcon Heavy</h3>
                             <p>The most powerful operational rocket capable of carrying heavy payloads.</p>
                         </div>
-                    </div>
+                    </div><br>
                 </div>
             </div>
         </section>

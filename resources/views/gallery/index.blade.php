@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,6 +41,8 @@
                 <h1 class="sitename">Space X</h1>
             </a>
 
+            <title>Home - SpaceX Falcon Launch Vehicle</title>
+
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="{{ url('/') }}">Home</a></li>
@@ -54,9 +57,8 @@
         </div>
     </header>
 
-    @extends('layouts.app')
 
-    @section('content')
+    <main class="main"></main>
     <!-- Hero Section -->
     <section id="hero" class="hero section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -67,109 +69,96 @@
                             <i class="bi bi-gear-fill me-2"></i>
                             Working for your success
                         </div>
+
                         <h1 class="mb-4">
-                            Maecenas Vitae <br>
-                            Consectetur Led <br>
-                            <span class="accent-text">Vestibulum Ante</span>
+                            Gallery<br>
+
+                            <span class="accent-text">Explore with us</span>
                         </h1>
+
                         <p class="mb-4 mb-md-5">
-                            Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
-                            Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+                            Explore our stunning visuals showcasing milestones and moments of SpaceX Falcon. A great feat achieved by our team is always etched in memory of humanity.
                         </p>
+
                         <div class="hero-buttons">
-                            <a href="{{ url('/about') }}" class="btn btn-primary me-0 me-sm-2 mx-1">Get Started</a>
-                            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-link mt-2 mt-sm-0 glightbox">
+                            <a href="{{ url('/') }}" class="btn btn-primary me-0 me-sm-2 mx-1">Get Started</a>
+                            <a href="https://www.youtube.com/watch?v=T43sbhCKvBY" class="btn btn-link mt-2 mt-sm-0 glightbox">
                                 <i class="bi bi-play-circle me-1"></i>
                                 Play Video
                             </a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-6">
                     <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
-                        <img src="{{ asset('assets/img/illustration-1.webp') }}" alt="Hero Image" class="img-fluid">
+                        <img src="{{ asset('assets/images/illustration-1.webp') }}" alt="Hero Image" class="img-fluid">
                         <div class="customers-badge">
                             <div class="customer-avatars">
-                                <img src="{{ asset('assets/img/avatar-1.webp') }}" alt="Customer 1" class="avatar">
-                                <img src="{{ asset('assets/img/avatar-2.webp') }}" alt="Customer 2" class="avatar">
-                                <img src="{{ asset('assets/img/avatar-3.webp') }}" alt="Customer 3" class="avatar">
-                                <img src="{{ asset('assets/img/avatar-4.webp') }}" alt="Customer 4" class="avatar">
-                                <img src="{{ asset('assets/img/avatar-5.webp') }}" alt="Customer 5" class="avatar">
+                                <img src="{{ asset('assets/images/avatar-1.webp') }}" alt="Customer 1" class="avatar">
+                                <img src="{{ asset('assets/images/avatar-2.webp') }}" alt="Customer 2" class="avatar">
+                                <img src="{{ asset('assets/images/avatar-3.webp') }}" alt="Customer 3" class="avatar">
+                                <img src="{{ asset('assets/images/avatar-4.webp') }}" alt="Customer 4" class="avatar">
+                                <img src="{{ asset('assets/images/avatar-5.webp') }}" alt="Customer 5" class="avatar">
                                 <span class="avatar more">12+</span>
                             </div>
-                            <p class="mb-0 mt-2">12,000+ lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                            <p class="mb-0 mt-2">Projects in Space X</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </div><br>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
-        <div class="container" data-aos="fade-up">
-            <header class="section-header">
-                <h2>Gallery</h2>
-                <p>Explore our stunning SpaceX Falcon Launch Vehicle moments</p>
-            </header>
-
-            <div class="row gy-4">
-                @php
-                $galleryImages = [
-                'assets/images/image1.jpg',
-                'assets/images/image2.jpg',
-                'assets/images/image3.jpg',
-                'assets/images/image4.jpg',
-                'assets/images/image5.jpg',
-                'assets/images/image6.jpg'
-                ];
-                @endphp
-
-                @foreach ($galleryImages as $image)
+            <div class="row g-4">
+                <!-- Image 1 -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="gallery-item" data-aos="zoom-in">
-                        <a href="{{ asset($image) }}" class="glightbox">
-                            <img src="{{ asset($image) }}" alt="Gallery Image" class="img-fluid">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                        <a href="{{ asset('assets/img/gallery-1.jpg') }}" class="glightbox">
+                            <img src="{{ asset('assets/images/gallery-1.jpg') }}" alt="Gallery Image 1" class="img-fluid">
                         </a>
                     </div>
                 </div>
-                <form action="{{ route('gallery.store') }}" method="POST" enctype="multipart/form-data">
-                    @csrf <!-- Cross-site request forgery protection -->
-
-                    <div class="form-group">
-                        <label for="image">Upload Image</label>
-                        <input type="file" name="image" class="form-control" required>
+                <!-- Image 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                        <a href="{{ asset('assets/img/gallery-2.jpg') }}" class="glightbox">
+                            <img src="{{ asset('assets/images/gallery-2.jpg') }}" alt="Gallery Image 2" class="img-fluid">
+                        </a>
                     </div>
-
-                    <div class="form-group">
-                        <label for="description">Description</label>
-                        <textarea name="description" class="form-control" required></textarea>
+                </div>
+                <!-- Image 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                        <a href="{{ asset('assets/images/gallery-3.jpg') }}" class="glightbox">
+                            <img src="{{ asset('assets/images/gallery-3.jpg') }}" alt="Gallery Image 3" class="img-fluid">
+                        </a>
                     </div>
-
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-
-                @endforeach
+                </div>
+                <!-- Image 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                        <a href="{{ asset('assets/images/gallery-4.jpg') }}" class="glightbox">
+                            <img src="{{ asset('assets/images/gallery-4.jpg') }}" alt="Gallery Image 4" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <!-- Image 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="700">
+                        <a href="{{ asset('assets/images/gallery-5.jpg') }}" class="glightbox">
+                            <img src="{{ asset('assets/images/gallery-5.jpg') }}" alt="Gallery Image 5" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div><br>
+            <div class="hero-buttons">
+                <h1>Live Satellite Data</h1><br>
+                <a href="https://www.youtube.com/watch?v=0FBiyFpV__g" class="btn btn-link mt-2 mt-sm-0 glightbox">
+                    <i class="bi bi-play-circle me-1"></i>
+                    Play Video
+                </a>
             </div>
+
+        </div>
         </div>
     </section>
     @endsection
-
-    @section('scripts')
-    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const lightbox = GLightbox({
-                selector: '.glightbox'
-            });
-        });
-    </script>
-    @endsection
-
-
-
-
-    <script src="{{ asset('assets/js/main.js') }}"></script>
-</body>
-
-</html>
